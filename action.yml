@@ -1,0 +1,17 @@
+name: Coder co custom action
+description: "Greet someone "
+
+inputs:
+  who-to-greet:
+    description: Who to greet
+    required: true
+    default: "Guts"
+
+outputs:
+  time:
+   description: time greeded
+
+
+runs: 
+    using: node20
+    main: dist/index.js
